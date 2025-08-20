@@ -1,0 +1,18 @@
+export default function SmileVector() {
+  return (
+    <svg
+      width="487"
+      height="34"
+      viewBox="0 0 487 34"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M4 30C73.6307 10.3798 266.914 -17.0885 483 30"
+        stroke="#54BD95"
+        strokeWidth="8"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
