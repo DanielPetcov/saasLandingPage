@@ -39,7 +39,7 @@ function App() {
         <HeroSection />
       </div>
 
-      <div>
+      <div className="bg-[#F9F8FE]">
         <SecondSection />
       </div>
     </div>
