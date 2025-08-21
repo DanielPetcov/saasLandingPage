@@ -11,12 +11,14 @@ export default function Portrait() {
         iconColor="#F8F8FA"
         initialOffSet={40}
         className="hidden lg:block z-10 absolute top-8 right-[-30px] p-4 bg-[#FBC75E] rotate-12"
+        delay={0.8}
       />
       <SquareTag
         IconLucide={Check}
         iconColor="#F8F8FA"
         initialOffSet={-40}
         className="hidden absolute z-10 lg:block top-[35%] left-[-70px] p-3 bg-[#4535AF] rotate-[-12deg]"
+        delay={0.9}
       />
       <SquareTag
         IconLucide={MessageSquare}
@@ -24,10 +26,12 @@ export default function Portrait() {
         iconSize={16}
         initialOffSet={30}
         className="hidden absolute z-10 lg:block bottom-[-10px] right-[40px] p-2 bg-[#FFAA94] rotate-12"
+        delay={1}
       />
       <CreditCard
         initialOffSet={30}
         className="z-10 rotate-12 bottom-10 right-5 lg:right-[-60px]"
+        delay={1.1}
       />
       <motion.img
         initial={{

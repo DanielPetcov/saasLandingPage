@@ -5,6 +5,8 @@ import { MegaMenuContext } from "./context/megaMenuContext";
 import { useState } from "react";
 import HeroSection from "./layout/heroSection";
 import SecondSection from "./layout/secondSection";
+import FeaturesSection from "./layout/featuresSection";
+import BenefitsSection from "./layout/benefitsSection";
 
 function App() {
   const megaMenuDiv = document.getElementById("megamenu");
@@ -13,7 +15,7 @@ function App() {
   return (
     <div className="bg-neutral-50 w-full min-h-screen relative overflow-hidden">
       <div
-        className="absolute top-0 left-0 h-2/2 -translate-x-1/2 -translate-y-1/2 aspect-square z-0 rounded-full
+        className="absolute top-0 left-0 h-2/3 -translate-x-1/2 -translate-y-1/2 aspect-square z-0 rounded-full
          bg-radial from-main from-10% to-neutral-50 opacity-30 blur-xl"
       />
       <div className="relative z-100">
@@ -39,8 +41,13 @@ function App() {
         <HeroSection />
       </div>
 
-      <div className="bg-[#F9F8FE]">
+      <div className="bg-[#F9F8FE] relative z-10">
         <SecondSection />
+      </div>
+
+      <div className="relative z-10">
+        <FeaturesSection />
+        <BenefitsSection />
       </div>
     </div>
   );

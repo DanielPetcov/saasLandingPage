@@ -6,22 +6,22 @@ interface Collaborators {
 export const collaboratorsData: Collaborators[] = [
   {
     id: "unsplash",
-    img: "/images/collaborators/unsplash.svg",
+    img: "/svg/collaborators/unsplash.svg",
   },
   {
     id: "notion",
-    img: "/images/collaborators/notion.svg",
+    img: "/svg/collaborators/notion.svg",
   },
   {
     id: "intercom",
-    img: "/images/collaborators/intercom.svg",
+    img: "/svg/collaborators/intercom.svg",
   },
   {
     id: "descript",
-    img: "/images/collaborators/descript.svg",
+    img: "/svg/collaborators/descript.svg",
   },
   {
     id: "grammarly",
-    img: "/images/collaborators/grammarly.svg",
+    img: "/svg/collaborators/grammarly.svg",
   },
 ];

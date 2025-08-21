@@ -7,6 +7,7 @@ interface IconInterface {
   iconSize?: number;
   initialOffSet?: number;
   className?: string;
+  delay?: number;
 }
 
 export default function SquareTag({
@@ -15,6 +16,7 @@ export default function SquareTag({
   iconSize,
   initialOffSet,
   className,
+  delay,
 }: IconInterface) {
   return (
     <motion.div
@@ -28,6 +30,7 @@ export default function SquareTag({
       }}
       transition={{
         duration: 0.8,
+        delay,
       }}
       className={`w-fit rounded-lg ${className}`}
     >

@@ -3,9 +3,11 @@ import { motion } from "motion/react";
 export default function CreditCard({
   className,
   initialOffSet,
+  delay,
 }: {
   className?: string;
   initialOffSet?: number;
+  delay?: number;
 }) {
   return (
     <motion.div
@@ -19,6 +21,7 @@ export default function CreditCard({
       }}
       transition={{
         duration: 0.8,
+        delay,
       }}
       className={`absolute rounded-lg bg-[#161C28] min-w-28 p-2 flex flex-col justify-between gap-8 overflow-hidden ${className}`}
     >

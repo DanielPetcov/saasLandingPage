@@ -6,11 +6,13 @@ export default function ActionButton({
   backgroundColor,
   textColor,
   hoverColor,
+  className,
 }: {
-  text?: string;
+  text: string;
   backgroundColor?: string;
   textColor?: string;
   hoverColor?: string;
+  className?: string;
 }) {
   const [bgColor, setBgColor] = useState("#54BD95");
   useEffect(() => {
@@ -29,7 +31,7 @@ export default function ActionButton({
 
   return (
     <motion.button
-      className="rounded-full py-3 px-5 cursor-pointer"
+      className={`rounded-full py-3 px-5 cursor-pointer ${className}`}
       style={{
         color: textColor ? textColor : "#f5f5f5",
       }}
