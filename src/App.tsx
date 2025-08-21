@@ -7,6 +7,7 @@ import HeroSection from "./layout/heroSection";
 import SecondSection from "./layout/secondSection";
 import FeaturesSection from "./layout/featuresSection";
 import BenefitsSection from "./layout/benefitsSection";
+import PlanSection from "./layout/planSection";
 
 function App() {
   const megaMenuDiv = document.getElementById("megamenu");
@@ -48,6 +49,7 @@ function App() {
       <div className="relative z-10">
         <FeaturesSection />
         <BenefitsSection />
+        <PlanSection />
       </div>
     </div>
   );

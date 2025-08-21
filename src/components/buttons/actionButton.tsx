@@ -6,12 +6,14 @@ export default function ActionButton({
   backgroundColor,
   textColor,
   hoverColor,
+  borderRadius,
   className,
 }: {
   text: string;
   backgroundColor?: string;
   textColor?: string;
   hoverColor?: string;
+  borderRadius?: number;
   className?: string;
 }) {
   const [bgColor, setBgColor] = useState("#54BD95");
@@ -31,9 +33,12 @@ export default function ActionButton({
 
   return (
     <motion.button
-      className={`rounded-full py-3 px-5 cursor-pointer ${className}`}
+      className={`py-3 px-5 cursor-pointer ${
+        !borderRadius && "rounded-full"
+      } ${className}`}
       style={{
         color: textColor ? textColor : "#f5f5f5",
+        borderRadius: borderRadius,
       }}
       animate={{
         backgroundColor: bgColor,
