@@ -24,7 +24,7 @@ export default function SquareTag({
   useEffect(() => {
     const runAnimations = async () => {
       await controls.start({
-        translateX: 0,
+        transform: "translateX(0)",
         opacity: 1,
         transition: {
           duration: 0.8,
@@ -33,7 +33,7 @@ export default function SquareTag({
       });
 
       await controls.start({
-        translateY: [0, -10, 0],
+        transform: ["translateY(0)", "translateY(-10px)", "translateY(0)"],
         rotate: [0, 2, 0],
         transition: {
           duration: 2,
@@ -53,7 +53,7 @@ export default function SquareTag({
   return (
     <motion.div
       initial={{
-        translateX: initialOffSet ? initialOffSet : 0,
+        transform: initialOffSet ? `translateX(${initialOffSet})` : 0,
         opacity: 0,
       }}
       animate={controls}

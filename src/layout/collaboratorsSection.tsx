@@ -1,21 +1,31 @@
 import { useEffect } from "react";
 import { collaboratorsData } from "../data/collaborators";
-import { animate, motion, useMotionValue } from "motion/react";
+import { motion, useAnimationControls, useMotionValue } from "motion/react";
 import { useMeasure } from "@uidotdev/usehooks";
 
 export default function CollaboratorsSection() {
   const xTranslation = useMotionValue(0);
   const [ref, { width }] = useMeasure();
 
+  const controls = useAnimationControls();
+
   useEffect(() => {
     if (!width) return;
 
     let finalPosition = -width - 48;
-    const controls = animate(xTranslation, [0, finalPosition], {
-      ease: "linear",
-      duration: 15,
-      repeat: Infinity,
-    });
+
+    const runAnimation = async () => {
+      await controls.start({
+        x: [xTranslation.get(), finalPosition],
+        transition: {
+          ease: "linear",
+          duration: 15,
+          repeat: Infinity,
+        },
+      });
+    };
+
+    runAnimation();
 
     return () => controls.stop();
   }, [xTranslation, width]);
@@ -28,8 +38,8 @@ export default function CollaboratorsSection() {
 
       <div className="relative w-full overflow-hidden">
         <motion.div
-          className="flex gap-12 min-w-max will-change-transform"
-          style={{ translateX: xTranslation }}
+          className="flex gap-12 min-w-max will-change-transform transform-gpu"
+          animate={controls}
         >
           <div className="flex gap-12" ref={ref}>
             {collaboratorsData.map((item) => (
