@@ -28,8 +28,8 @@ export default function CollaboratorsSection() {
 
       <div className="relative w-full overflow-hidden">
         <motion.div
-          className="flex gap-12 min-w-max"
-          style={{ x: xTranslation }}
+          className="flex gap-12 min-w-max will-change-transform"
+          style={{ translateX: xTranslation }}
         >
           <div className="flex gap-12" ref={ref}>
             {collaboratorsData.map((item) => (

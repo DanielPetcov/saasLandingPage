@@ -11,13 +11,13 @@ export default function MegamenuWrapper() {
       {show && (
         <motion.div
           initial={{
-            transform: "translateX(-100%)",
+            translateX: "-100%",
           }}
           animate={{
-            transform: "translateX(0)",
+            translateX: 0,
           }}
           exit={{
-            transform: "translateX(-100%)",
+            translateX: "-100%",
           }}
           transition={{
             duration: 0.5,

@@ -15,7 +15,7 @@ export default function CreditCard({
   useEffect(() => {
     const runAnimations = async () => {
       await controls.start({
-        x: 0,
+        translateX: 0,
         opacity: 1,
         transition: {
           duration: 0.8,
@@ -24,7 +24,7 @@ export default function CreditCard({
       });
 
       await controls.start({
-        y: [0, -10, 0],
+        translateY: [0, -10, 0],
         rotate: [0, 2, 0],
         transition: {
           duration: 2,
@@ -44,7 +44,7 @@ export default function CreditCard({
   return (
     <motion.div
       initial={{
-        x: initialOffSet ? initialOffSet : 0,
+        translateX: initialOffSet ? initialOffSet : 0,
         opacity: 0,
       }}
       animate={controls}
