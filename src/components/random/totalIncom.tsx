@@ -27,7 +27,7 @@ export default function TotalIncome({ delay }: { delay?: number }) {
   return (
     <motion.div
       animate={controls}
-      className="absolute top-10 right-4 bg-neutral-50 shadow-md p-2 w-fit rounded-lg flex flex-col gap-2"
+      className="absolute top-10 right-4 bg-neutral-50 shadow-md p-2 w-fit rounded-lg flex flex-col gap-2 will-change-transform transform-gpu"
     >
       <div className="text-xs text-[#A9A7B6]">Total income</div>
       <div className="flex items-center gap-6 justify-between">

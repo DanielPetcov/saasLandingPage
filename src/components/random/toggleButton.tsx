@@ -52,7 +52,7 @@ export default function ToggleButton({
     >
       <motion.div
         animate={controls}
-        className="absolute top-1/2 -translate-y-1/2 h-[calc(100%_-_10px)] w-[calc(50%_-_4px)] bg-main rounded-lg"
+        className="absolute top-1/2 -translate-y-1/2 h-[calc(100%_-_10px)] w-[calc(50%_-_4px)] bg-main rounded-lg will-change-transform transform-gpu"
       />
       <div
         className="relative z-10 px-5"

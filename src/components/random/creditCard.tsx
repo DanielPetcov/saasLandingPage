@@ -15,7 +15,7 @@ export default function CreditCard({
   useEffect(() => {
     const runAnimations = async () => {
       await controls.start({
-        transform: "translateX(0)",
+        x: 0,
         opacity: 1,
         transition: {
           duration: 0.8,
@@ -24,7 +24,7 @@ export default function CreditCard({
       });
 
       await controls.start({
-        transform: ["translateY(0)", "translateY(-10px)", "translateY(0)"],
+        y: [0, -10, 0],
         rotate: [0, 2, 0],
         transition: {
           duration: 2,
@@ -44,11 +44,11 @@ export default function CreditCard({
   return (
     <motion.div
       initial={{
-        transform: initialOffSet ? `translateX(${initialOffSet})` : 0,
+        x: initialOffSet ? initialOffSet : 0,
         opacity: 0,
       }}
       animate={controls}
-      className={`absolute rounded-lg bg-[#161C28] min-w-28 p-2 flex flex-col justify-between gap-8 overflow-hidden will-change-transform ${className}`}
+      className={`absolute rounded-lg bg-[#161C28] min-w-28 p-2 flex flex-col justify-between gap-8 overflow-hidden will-change-transform transform-gpu ${className}`}
     >
       <div className="absolute w-20 h-20 -top-10 -right-10  bg-[#232937] rounded-full"></div>
       <div className="absolute w-24 h-24 -bottom-10 -left-10  bg-[#232937] rounded-full">

@@ -24,7 +24,7 @@ export default function SquareTag({
   useEffect(() => {
     const runAnimations = async () => {
       await controls.start({
-        transform: "translateX(0)",
+        x: 0,
         opacity: 1,
         transition: {
           duration: 0.8,
@@ -33,7 +33,7 @@ export default function SquareTag({
       });
 
       await controls.start({
-        transform: ["translateY(0)", "translateY(-10px)", "translateY(0)"],
+        y: [0, -10, 0],
         rotate: [0, 2, 0],
         transition: {
           duration: 2,
@@ -53,11 +53,11 @@ export default function SquareTag({
   return (
     <motion.div
       initial={{
-        transform: initialOffSet ? `translateX(${initialOffSet})` : 0,
+        x: initialOffSet ? initialOffSet : 0,
         opacity: 0,
       }}
       animate={controls}
-      className={`w-fit rounded-lg will-change-transform ${className}`}
+      className={`w-fit rounded-lg will-change-transform transform-gpu ${className}`}
     >
       <IconLucide color={iconColor} size={iconSize} />
     </motion.div>

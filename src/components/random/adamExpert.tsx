@@ -28,7 +28,7 @@ export default function AdamExpert({ delay }: { delay?: number }) {
   return (
     <motion.div
       animate={controls}
-      className="hidden lg:block absolute top-10 -left-20 bg-neutral-50 shadow-md p-2 w-fit rounded-lg"
+      className="hidden lg:block absolute top-10 -left-20 bg-neutral-50 shadow-md p-2 w-fit rounded-lg will-change-transform transform-gpu"
     >
       <div className="flex gap-4 items-center">
         <img src="/images/dude.svg" alt="dude" />

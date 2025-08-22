@@ -44,7 +44,7 @@ export default function Reviews({
         duration: 0.4,
         delay: 1,
       }}
-      className="flex flex-col gap-3"
+      className="flex flex-col gap-3 will-change-transform transform-gpu"
     >
       <div className="flex items-center gap-1">
         {Math.round(rating) >= 5

@@ -43,7 +43,7 @@ export default function PlanCard({
       viewport={{
         once: true,
       }}
-      className={`relative overflow-hidden rounded-2xl p-4 shadow-md h-full ${
+      className={`relative overflow-hidden rounded-2xl p-4 shadow-md h-full will-change-transform transform-gpu ${
         data.isMain ? "bg-main" : "bg-white"
       }`}
     >

@@ -46,7 +46,7 @@ export default function PerformanceSkills({
         duration: 0.4,
         delay: animDelay,
       }}
-      className="grid grid-cols-[auto_auto] gap-2 w-fit"
+      className="grid grid-cols-[auto_auto] gap-2 w-fit will-change-transform transform-gpu"
     >
       <div className="bg-neutral-50 shadow-md w-fit h-fit p-4">
         <Icon color={iconColor ? iconColor : "#54BD95"} />
