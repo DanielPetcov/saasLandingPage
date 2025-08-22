@@ -10,16 +10,16 @@ export const performanceData: PerformanceDataType[] = [
     icon: Activity,
     title: "Publishing",
     description:
-      "Plan, collaborate, and publishing your contetn that drivees meaningful engagement and growth for your barnd",
+      "Plan, collaborate, and publishing your content that drives meaningful engagement and growth for your brand",
   },
   {
     icon: ChartPie,
     title: "Analytics",
-    description: "Analyze your performance and create goegeous report",
+    description: "Analyze your performance and create gorgeous reports",
   },
   {
     icon: Command,
     title: "Publishing",
-    description: "Quiuckly navigate you anda engage with your adience",
+    description: "Quickly navigate you and engage with your audience",
   },
 ];

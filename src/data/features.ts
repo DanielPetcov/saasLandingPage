@@ -11,20 +11,20 @@ interface FeaturesDataType {
 
 export const featuresData: FeaturesDataType[] = [
   {
-    title: "Collboration Teams",
+    title: "Collaboration Teams",
     description: "Here you can handle projects together with team virtually",
     cover: FeatureCollTeam,
   },
   {
     title: "Cloud Storage",
     description:
-      "No nedd to worry about storage because we provide storage up to 2 TB",
+      "No need to worry about storage because we provide storage up to 2 TB",
     cover: FeatureDocumentFile,
   },
   {
     title: "Daily Analytics",
     description:
-      "We always provide useful informatin to make it easier for you every day",
+      "We always provide useful information to make it easier for you every day",
     cover: FeatureDaily,
   },
 ];

@@ -12,7 +12,7 @@ export const footerData: FooterDataType[] = [
     links: [
       {
         link: "#",
-        title: "Help centre",
+        title: "Help center",
       },
       {
         link: "#",
@@ -45,7 +45,7 @@ export const footerData: FooterDataType[] = [
       },
       {
         link: "#",
-        title: "Covid responde",
+        title: "Covid response",
       },
     ],
   },

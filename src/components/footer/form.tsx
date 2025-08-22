@@ -70,7 +70,7 @@ export default function FooterForm() {
               },
             })}
             className="bg-neutral-50 rounded-lg px-4 py-2 text-neutral-900 text-sm"
-            placeholder="What are you say ?"
+            placeholder="What do you say ?"
           />
           {errors.message && (
             <span className="text-sm text-red-400">

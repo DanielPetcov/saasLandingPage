@@ -11,7 +11,7 @@ export default function BenefitsSection() {
       <div className="grid grid-cols-1 gap-10 w-fit mx-auto lg:w-full lg:grid-cols-2 lg:grid-rows-[auto_1fr]">
         <div className="text-center lg:text-left lg:h-fit">
           <span className="font-bold text-4xl lg:text-5xl">
-            What Benifit Will <br className="hidden lg:block" /> You Get
+            What Benifits Will <br className="hidden lg:block" /> You Get
           </span>
         </div>
 
@@ -20,7 +20,7 @@ export default function BenefitsSection() {
           <div className="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-fit p-2 rounded-lg shadow-md bg-neutral-50 flex items-center gap-4">
             <CircleCheck color="#2B9B5B" />
             <div className="text-sm text-nowrap lg:text-base">
-              Money Transfer Succesfull
+              Money Transfer Succesful
             </div>
           </div>
           <div className="absolute top-1/2 -translate-y-1/2 left-2 lg:-left-14">

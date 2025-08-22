@@ -4,7 +4,7 @@ interface BenefitsDataType {
 
 export const benefitsData: BenefitsDataType[] = [
   {
-    text: "Free Consulting With Experet Saving Money",
+    text: "Free Consulting With Expert Saving Money",
   },
   {
     text: "Online Banking",

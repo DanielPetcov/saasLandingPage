@@ -19,7 +19,7 @@ export default function HeroSection() {
           </div>
           <div className="font-medium text-sm text-center md:text-md lg:text-left lg:text-lg lg:max-w-[90%]">
             Let's make your work more organize and easily using the Taskio
-            Dashboard with many of the latest featuresin managing work every
+            Dashboard with many of the latest features in managing work every
             day.
           </div>
         </div>

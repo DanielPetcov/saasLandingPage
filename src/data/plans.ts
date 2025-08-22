@@ -47,7 +47,7 @@ export const plansData: PlansDataType[] = [
   },
   {
     title: "Business",
-    about: "Unveil new superpowers and join the Design Leaque",
+    about: "Uncover new superpowers and join the Design Leaque",
     price: {
       monthly: 30,
       yearly: 16,
@@ -56,7 +56,7 @@ export const plansData: PlansDataType[] = [
       "All the features of pro plan",
       "Account success Manager",
       "Single Sign-On (SSO)",
-      "Co-conception pogram",
+      "Co-conception program",
       "Collaboration-Soon",
     ],
     buttonText: "Go to Business",

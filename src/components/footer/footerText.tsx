@@ -5,7 +5,7 @@ export default function FooterText() {
   return (
     <div className="lg:flex flex-col gap-8">
       <div className="font-bold text-3xl text-center lg:text-left lg:text-5xl">
-        People are Saying <br /> About DoWith
+        People are Saying <br /> About Us
       </div>
       <div className="hidden lg:flex flex-col gap-10 text-[#A6A6A6]">
         <div>
