@@ -1,12 +1,9 @@
-import {
-  ChartNoAxesColumn,
-  CircleCheck,
-  Image,
-  MessageCircle,
-} from "lucide-react";
+import { CircleCheck, Image } from "lucide-react";
 import BulletCheck from "../components/random/bulletCheck";
 import { benefitsData } from "../data/benefits";
 import SquareTag from "../components/squareTag";
+import AdamExpert from "@/components/random/adamExpert";
+import TotalIncome from "@/components/random/totalIncom";
 
 export default function BenefitsSection() {
   return (
@@ -34,28 +31,8 @@ export default function BenefitsSection() {
               IconLucide={Image}
             />
           </div>
-          <div className="absolute top-10 right-4 bg-neutral-50 shadow-md p-2 w-fit rounded-lg flex flex-col gap-2">
-            <div className="text-xs text-[#A9A7B6]">Total income</div>
-            <div className="flex items-center gap-6 justify-between">
-              <div>$245.00</div>
-              <ChartNoAxesColumn size={18} color="#54bd95" />
-            </div>
-          </div>
-
-          <div className="hidden lg:block absolute top-10 -left-20 bg-neutral-50 shadow-md p-2 w-fit rounded-lg">
-            <div className="flex gap-4 items-center">
-              <img src="/images/dude.svg" alt="dude" />
-              <div className="flex flex-col gap-2">
-                <span className="text-sm">Amanda Young</span>
-                <span className="text-xs text-[#A9A7B6]">
-                  Expert Saving Money
-                </span>
-              </div>
-              <div className="p-3 rounded-full bg-main">
-                <MessageCircle size={16} color="#fafafa" />
-              </div>
-            </div>
-          </div>
+          <TotalIncome />
+          <AdamExpert delay={0.2} />
         </div>
 
         <div className="flex flex-col gap-4 h-full lg:gap-8">

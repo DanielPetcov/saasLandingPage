@@ -1,4 +1,5 @@
-import { motion } from "motion/react";
+import { motion, useAnimationControls } from "motion/react";
+import { useEffect } from "react";
 
 export default function CreditCard({
   className,
@@ -9,20 +10,44 @@ export default function CreditCard({
   initialOffSet?: number;
   delay?: number;
 }) {
+  const controls = useAnimationControls();
+
+  useEffect(() => {
+    const runAnimations = async () => {
+      await controls.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 0.8,
+          delay,
+        },
+      });
+
+      await controls.start({
+        y: [0, -10, 0],
+        rotate: [0, 2, 0],
+        transition: {
+          duration: 2,
+          delay: 1,
+          repeat: Infinity,
+          repeatType: "loop",
+          ease: "easeInOut",
+        },
+      });
+    };
+
+    runAnimations();
+
+    return () => controls.stop();
+  }, []);
+
   return (
     <motion.div
       initial={{
         x: initialOffSet ? initialOffSet : 0,
         opacity: 0,
       }}
-      animate={{
-        x: 0,
-        opacity: 1,
-      }}
-      transition={{
-        duration: 0.8,
-        delay,
-      }}
+      animate={controls}
       className={`absolute rounded-lg bg-[#161C28] min-w-28 p-2 flex flex-col justify-between gap-8 overflow-hidden ${className}`}
     >
       <div className="absolute w-20 h-20 -top-10 -right-10  bg-[#232937] rounded-full"></div>

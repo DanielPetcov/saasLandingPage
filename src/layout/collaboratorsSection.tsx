@@ -21,8 +21,8 @@ export default function CollaboratorsSection() {
   }, [xTranslation, width]);
 
   return (
-    <div className="flex flex-col items-center gap-5 lg:gap-16 max-w-screen xl:px-4">
-      <div className="font-bold text-center text-2xl lg:text-4xl lg:w-1/2">
+    <div className="flex flex-col items-center gap-5 lg:gap-16 max-w-screen px-4">
+      <div className="font-bold text-center text-2xl lg:text-4xl ">
         More than 25,000 teams use Collabs
       </div>
 

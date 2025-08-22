@@ -16,7 +16,7 @@ function App() {
   const [visible, setVisible] = useState(false);
 
   return (
-    <div className="bg-neutral-50 w-full min-h-screen relative overflow-hidden">
+    <div className="bg-neutral-50 w-full min-h-screen relative overflow-hidden font-display">
       <div
         className="absolute top-0 left-0 h-2/3 -translate-x-1/2 -translate-y-1/2 aspect-square z-0 rounded-full
          bg-radial from-main from-10% to-neutral-50 opacity-30 blur-xl"

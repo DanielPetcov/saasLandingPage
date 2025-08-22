@@ -1,10 +1,16 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter_18pt-Medium.ttf");
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme {
   --color-main: #54bd95;
+  --font-display: "Inter", sans-serif;
 }
 
 @theme inline {

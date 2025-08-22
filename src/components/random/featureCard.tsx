@@ -1,6 +1,8 @@
 import { useMeasure } from "@uidotdev/usehooks";
 import type { ComponentType, SVGProps } from "react";
 
+import { motion } from "motion/react";
+
 interface FeatureCardProps {
   title: string;
   description: string;
@@ -15,7 +17,22 @@ export default function FeatureCard({
   const [ref, { width }] = useMeasure();
 
   return (
-    <div className="flex flex-col gap-4 items-center">
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      viewport={{
+        once: true,
+      }}
+      transition={{
+        delay: 0.5,
+        duration: 0.5,
+      }}
+      className="flex flex-col gap-4 items-center"
+    >
       <div className="max-w-full h-auto">
         <Cover
           className="max-w-full h-fit rounded-3xl overflow-hidden"
@@ -34,6 +51,6 @@ export default function FeatureCard({
           {description}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
