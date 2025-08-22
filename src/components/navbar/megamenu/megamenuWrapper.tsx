@@ -11,18 +11,18 @@ export default function MegamenuWrapper() {
       {show && (
         <motion.div
           initial={{
-            left: "-100%",
+            transform: "translateX(-100%)",
           }}
           animate={{
-            left: 0,
+            transform: "translateX(0)",
           }}
           exit={{
-            left: "-100%",
+            transform: "translateX(-100%)",
           }}
           transition={{
             duration: 0.5,
           }}
-          className="absolute top-0 w-full max-h-screen h-full z-100"
+          className="absolute top-0 w-full max-h-screen h-full z-100 will-change-transform"
         >
           <MegaMenu />
         </motion.div>
