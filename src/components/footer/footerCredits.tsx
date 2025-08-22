@@ -9,8 +9,12 @@ export default function FooterCredits() {
         <span>@{currentYear} Mady by Petcov Daniel.</span>
         <div className="flex gap-1">
           <span>Design credits to</span>
-          <a href="#" className="hover:underline" target="_blank">
-            idk
+          <a
+            href="https://www.figma.com/community"
+            className="hover:underline"
+            target="_blank"
+          >
+            Figma community
           </a>
         </div>
       </div>
