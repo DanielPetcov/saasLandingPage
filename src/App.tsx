@@ -8,6 +8,8 @@ import SecondSection from "./layout/secondSection";
 import FeaturesSection from "./layout/featuresSection";
 import BenefitsSection from "./layout/benefitsSection";
 import PlanSection from "./layout/planSection";
+import Footer from "./layout/footer";
+import { Toaster } from "./components/ui/sonner";
 
 function App() {
   const megaMenuDiv = document.getElementById("megamenu");
@@ -51,6 +53,9 @@ function App() {
         <BenefitsSection />
         <PlanSection />
       </div>
+
+      <Footer />
+      <Toaster />
     </div>
   );
 }

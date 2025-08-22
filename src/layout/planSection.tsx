@@ -17,7 +17,7 @@ export default function PlanSection() {
   const [active, setActive] = useState<"monthly" | "yearly">("yearly");
 
   return (
-    <div className="max-w-screen-xl mx-auto px-4 py-10">
+    <div className="max-w-screen-xl mx-auto px-4 py-16">
       <div className="flex flex-col gap-10">
         <div className="flex flex-col gap-8 items-center">
           <div className="font-bold text-4xl text-center">

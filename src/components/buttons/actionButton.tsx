@@ -7,6 +7,7 @@ export default function ActionButton({
   textColor,
   hoverColor,
   borderRadius,
+  type,
   className,
 }: {
   text: string;
@@ -14,6 +15,7 @@ export default function ActionButton({
   textColor?: string;
   hoverColor?: string;
   borderRadius?: number;
+  type?: "button" | "submit" | "reset" | undefined;
   className?: string;
 }) {
   const [bgColor, setBgColor] = useState("#54BD95");
@@ -48,6 +50,7 @@ export default function ActionButton({
       }}
       onMouseOver={handleOnMouseOver}
       onMouseLeave={handleOnMouseLeave}
+      type={type}
     >
       <span>{text}</span>
     </motion.button>
