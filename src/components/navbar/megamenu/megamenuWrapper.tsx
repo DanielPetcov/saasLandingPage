@@ -22,7 +22,7 @@ export default function MegamenuWrapper() {
           transition={{
             duration: 0.5,
           }}
-          className="absolute top-0 w-full max-h-screen h-full z-100 will-change-transform transform-gpu"
+          className="fixed top-0 w-full max-h-screen h-full z-100 will-change-transform transform-gpu"
         >
           <MegaMenu />
         </motion.div>
